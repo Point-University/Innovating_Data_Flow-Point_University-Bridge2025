@@ -11,7 +11,7 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 
 @app.function_name(name="Bridge2025")
 @app.route(route="Bridge2025")
-def Bridge2025(req: func.HttpRequest) -> func.HttpResponse:
+def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Processing HTTP request.')
 
     try:
