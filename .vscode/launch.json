@@ -7,9 +7,12 @@
       "request": "attach",
       "connect": {
         "host": "localhost",
-        "port": 9091
+        "port": 7071
       },
-      "preLaunchTask": "func: host start"
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "preLaunchTask": "func: host start",
+      "justMyCode": false
     }
   ]
 }
