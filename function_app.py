@@ -7,7 +7,7 @@ from softdocs_crm import (
     create_deal
 )
 
-app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
+app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
 @app.function_name(name="Bridge2025")
 @app.route(route="Bridge2025")
